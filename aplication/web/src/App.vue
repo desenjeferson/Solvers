@@ -8,6 +8,17 @@
   </div>
 </template>
 
+<script>
+import User from './services/user'
+export default {
+  mounted(){
+    User.listar().then(resposta => {
+      console.log(resposta);
+    })
+  }
+}
+</script>>
+
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
