@@ -1,7 +1,9 @@
-import {http} from './config'
+import { http } from './config'
 
 export default {
-    listar:() => {
-        return http.get('users')
+    listar: (userID) => {
+        if (!userID) return false;
+        const user = 'users/' + userID
+        return http.get(user)
     }
 }
