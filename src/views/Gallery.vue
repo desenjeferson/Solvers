@@ -1,5 +1,5 @@
 <template>
   <div>
-    Sobre
+      Fotos
   </div>
 </template>

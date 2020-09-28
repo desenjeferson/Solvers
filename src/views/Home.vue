@@ -1,15 +1,21 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
+  <div>
+    <v-row>
+      <v-col v-for="(project, indice) in projects" :key="indice" cols="4">
+        <v-card height="200">
+          {{project.name}}
+        </v-card>
+      </v-col>
+    </v-row>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-
 export default {
-  name: 'Home',
-  components: {
+  data() {
+    return {
+      projects: [{name: 'War Base'}]
+    };
   }
 }
 </script>
