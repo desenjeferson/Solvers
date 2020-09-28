@@ -1,5 +1,5 @@
 <template>
-  <v-app class="overflow-hidden">
+  <v-app>
     <v-navigation-drawer v-model="drawer" absolute temporary>
       <v-list-item>
         <v-img src="./assets/logo.png"></v-img>
@@ -8,53 +8,29 @@
       <v-divider></v-divider>
 
       <v-list dense>
-        <router-link
+        <v-list-item
           v-for="item in views"
           :key="item.title"
+          link
           :to="item.router"
-          class="text-decoration-none"
         >
-          <v-list-item link>
-            <v-list-item-icon>
-              <v-icon>{{ item.icon }}</v-icon>
-            </v-list-item-icon>
+          <v-list-item-icon>
+            <v-icon>{{ item.icon }}</v-icon>
+          </v-list-item-icon>
 
-            <v-list-item-content>
-              <v-list-item-title>{{ item.title }}</v-list-item-title>
-            </v-list-item-content>
-          </v-list-item>
-        </router-link>
+          <v-list-item-content>
+            <v-list-item-title>{{ item.title }}</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
       </v-list>
     </v-navigation-drawer>
-
-    <v-app-bar
-      absolute
-      dark
-      shrink-on-scroll
-      prominent
-      src="./assets/banner.png"
-      scroll-target="#scrolling-techniques-3"
-    >
-      <template v-slot:img="{ props }">
-        <v-img v-bind="props"></v-img>
-      </template>
+    <v-app-bar app shrink-on-scroll src="./assets/banner.png">
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
 
       <v-toolbar-title>Solvers</v-toolbar-title>
 
       <v-spacer></v-spacer>
 
-      <!--<v-btn icon>
-        <v-icon>mdi-magnify</v-icon>
-      </v-btn>
-
-      <v-btn icon>
-        <v-icon>mdi-heart</v-icon>
-      </v-btn>
-
-      <v-btn icon>
-        <v-icon>mdi-dots-vertical</v-icon>
-      </v-btn>-->
       <v-switch
         v-model="$vuetify.theme.dark"
         inset
@@ -64,7 +40,7 @@
 
       <template v-slot:extension>
         <v-tabs align-with-title>
-          <v-tab v-for="item in views" :key="item.title" :to="item.router">
+          <v-tab v-for="item in views" :key="item.router" :to="item.router">
             {{ item.title }}
           </v-tab>
         </v-tabs>
@@ -72,17 +48,16 @@
     </v-app-bar>
 
     <v-main>
-      <v-container fluid>
+      <v-container>
         <router-view></router-view>
       </v-container>
     </v-main>
-
     <v-footer dark padless>
       <v-card flat tile class="flex lighten-1 white--text text-center">
         <v-card-text>
           <v-btn
             v-for="icon in contacts"
-            :key="icon"
+            :key="icon.icon"
             class="mx-4 white--text"
             icon
             ><a :href="icon.link" class="text-decoration-none">
@@ -117,11 +92,16 @@ export default {
       //{ icon: "mdi-notion", link: "https://www.notion.so/solversteam" },
     ],
     views: [
-      { title: "Home", icon: "mdi-view-dashboard", router: "Home" },
-      { title: "About", icon: "mdi-forum", router: "About" },
-      { title: "Gallery", icon: "mdi-image", router: "Gallery" },
+      { title: "Home", icon: "mdi-view-dashboard", router: "home" },
+      { title: "About", icon: "mdi-forum", router: "about" },
+      { title: "Gallery", icon: "mdi-image", router: "gallery" },
     ],
   }),
+  computed: {
+    windowHeight() {
+      console.log(window.innerHeight);
+      return window.innerHeight;
+    },
+  },
 };
 </script>
-
