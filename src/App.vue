@@ -1,49 +1,55 @@
 <template>
   <v-app>
-    <v-navigation-drawer v-model="drawer" absolute temporary>
-      <v-list-item>
-        <v-img src="./assets/logo.png"></v-img>
-      </v-list-item>
-      <v-divider></v-divider>
-      <v-list dense>
-        <v-list-item
-          v-for="item in views"
-          :key="item.title"
-          link
-          :to="item.router"
-        >
-          <v-list-item-icon>
-            <v-icon>{{ item.icon }}</v-icon>
-          </v-list-item-icon>
-          <v-list-item-content>
-            <v-list-item-title>{{ item.title }}</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-      </v-list>
-    </v-navigation-drawer>
-    <v-app-bar app shrink-on-scroll src="./assets/banner.png">
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-      <v-toolbar-title>Solvers</v-toolbar-title>
-      <v-spacer></v-spacer>
-      <v-switch
-        v-model="$vuetify.theme.dark"
-        inset
-        label="Theme Dark"
-        persistent-hint
-      ></v-switch>
-      <template v-slot:extension>
-        <v-tabs align-with-title>
-          <v-tab v-for="item in views" :key="item.router" :to="item.router">
-            {{ item.title }}
-          </v-tab>
-        </v-tabs>
+    <v-speed-dial
+      fixed
+      v-model="fab"
+      :top="true"
+      :left="true"
+      direction="bottom"
+      :open-on-hover="true"
+      transition="slide-y-transition"
+    >
+      <template v-slot:activator>
+        <v-btn v-model="fab">
+          <v-img
+            max-width="70"
+            contain
+            src="./assets/logo.png"
+            lazy-src="./assets/logo.png"
+          >
+          </v-img>
+        </v-btn>
       </template>
-    </v-app-bar>
+      <v-btn
+        v-for="(view, indice) of views"
+        :key="indice"
+        text
+        :to="view.router"
+      >
+        {{ view.title }}
+      </v-btn><v-switch
+            v-model="$vuetify.theme.dark"
+            inset
+            label="Dark Theme"
+          ></v-switch
+        >
+    </v-speed-dial>
     <v-main>
-      <v-container>
-        <router-view></router-view>
-      </v-container>
-    </v-main>
+      <v-row absolute floating>
+        <v-col>
+          <v-container>
+            <v-row absolute floating>
+              <v-col>
+                <v-window>
+                  <v-window-item v-for="(view, indice) in views" :key="indice">
+                    <router-view></router-view>
+                  </v-window-item>
+                </v-window>
+              </v-col>
+            </v-row>
+          </v-container>
+        </v-col> </v-row
+    ></v-main>
     <v-footer padless>
       <v-card flat tile class="flex text-center">
         <v-card-text>
@@ -55,7 +61,8 @@
             >
           </v-btn>
         </v-card-text>
-        <v-card-text class="pt-0"> Projetinho top hein! </v-card-text>
+        <v-card-text class="pt-0">
+          Projetinho top hein!</v-card-text>
         <v-divider></v-divider>
         <v-card-text>
           {{ new Date().getFullYear() }} — <strong>Solvers</strong>
@@ -68,7 +75,7 @@
 <script>
 export default {
   data: () => ({
-    drawer: false,
+    fab: false,
     contacts: [
       { icon: "mdi-discord", link: "https://discord.gg/yA3D23r" },
       { icon: "mdi-github", link: "https://github.com/desenjeferson/Solvers" },
@@ -80,11 +87,5 @@ export default {
       { title: "Gallery", icon: "mdi-image", router: "gallery" },
     ],
   }),
-  computed: {
-    windowHeight() {
-      console.log(window.innerHeight);
-      return window.innerHeight;
-    },
-  },
 };
 </script>

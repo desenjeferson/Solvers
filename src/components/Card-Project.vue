@@ -6,7 +6,7 @@
         <v-list-item-title class="headline mb-1">
           {{ project.name }}
         </v-list-item-title>
-        <v-list-item-subtitle>{{ project.descripition }}</v-list-item-subtitle>
+        <v-list-item-subtitle>{{ project.description }}</v-list-item-subtitle>
       </v-list-item-content>
       <v-list-item-avatar tile size="80">
         <v-img
@@ -44,7 +44,7 @@
     </v-card-text>
     <v-card-actions>
       <v-btn
-        v-for="button in project.bunttons"
+        v-for="button in project.buttons"
         :key="button.name"
         :href="button.link"
       >

@@ -26,7 +26,7 @@ export default {
         {
           name: "War Base",
           status: "In progress",
-          descripition: "Uno joguinho",
+          description: "Uno joguinho",
           image:
             "https://i.pinimg.com/736x/af/96/76/af96763ed2bfeee4141a8515cc39e6a7.jpg",
 
@@ -43,7 +43,7 @@ export default {
               },
             ],
           },
-          bunttons: [
+          buttons: [
             {
               name: "GitHub",
               link: "https://github.com/desenjeferson/war-base",
