@@ -1,24 +1,24 @@
 <template>
-  <div>
+  <section class="full-page">
+    <MainPage />
     <v-container fluid>
-      <Waterfall :options="null">
-        <WaterfallItem v-for="(project, indice) in projects" :key="indice">
-          <CardProject :project="project" />
-        </WaterfallItem>
-      </Waterfall>
+      <CardProject
+        v-for="(project, indice) in projects"
+        :key="indice"
+        :project="project"
+      />
     </v-container>
-  </div>
+  </section>
 </template>
 
 <script>
 import CardProject from "../components/Card-Project.vue";
-import { Waterfall, WaterfallItem } from "vue2-waterfall";
+import MainPage from "../components/Main-Page.vue";
 
 export default {
   components: {
+    MainPage,
     CardProject,
-    Waterfall,
-    WaterfallItem,
   },
   data() {
     return {
@@ -61,3 +61,10 @@ export default {
   },
 };
 </script>
+<style scoped>
+.full-page {
+  height: 100vh;
+  width: 100vw;
+  margin: 0px;
+}
+</style>>
