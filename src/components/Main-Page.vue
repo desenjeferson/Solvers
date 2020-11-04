@@ -1,16 +1,213 @@
 <template>
-  <div>
-    
-  </div>
+  <section class="full-page">
+    <svg width="100vw" height="100vh" xmlns="http://www.w3.org/2000/svg">
+      <g>
+        <path
+          transform="rotate(35 713.309875488281,199.7680053710938) "
+          id="svg_39"
+          d="m656.70067,187.04063l56.60912,-41.18619l56.60926,41.18619l-21.62272,66.64094l-69.97288,0l-21.62278,-66.64094z"
+          fill-opacity="null"
+          stroke-width="1.5"
+          stroke="#0000ff"
+          fill="none"
+        />
+        <path
+          transform="rotate(35 519.8936157226561,202.90280151367193) "
+          id="svg_41"
+          d="m463.28442,190.17542l56.60912,-41.18619l56.60926,41.18619l-21.62272,66.64094l-69.97288,0l-21.62278,-66.64094z"
+          fill-opacity="null"
+          stroke-width="1.5"
+          stroke="#00ffff"
+          fill="none"
+        />
+        <path
+          transform="rotate(35 617.3854370117189,270.92761230468744) "
+          id="svg_42"
+          d="m560.77624,258.20025l56.60912,-41.18619l56.60926,41.18619l-21.62272,66.64094l-69.97288,0l-21.62278,-66.64094z"
+          fill-opacity="null"
+          stroke-width="1.5"
+          stroke="#00bf00"
+          fill="none"
+        />
+        <path
+          transform="rotate(35 675.3789672851562,87.54270172119148) "
+          id="svg_43"
+          d="m618.76977,74.81532l56.60912,-41.18619l56.60926,41.18619l-21.62272,66.64094l-69.97288,0l-21.62278,-66.64094z"
+          fill-opacity="null"
+          stroke-width="1.5"
+          stroke="#ff0000"
+          fill="none"
+        />
+        <path
+          transform="rotate(35 555.6301879882811,87.856185913086) "
+          id="svg_44"
+          d="m499.02098,75.12881l56.60912,-41.18619l56.60926,41.18619l-21.62272,66.64094l-69.97288,0l-21.62278,-66.64094z"
+          fill-opacity="null"
+          stroke-width="1.5"
+          stroke="#ffff00"
+          fill="none"
+        />
+        <path
+          transform="rotate(35 788.2333984375001,112.16920471191409) "
+          id="svg_45"
+          d="m731.62421,99.44183l56.60912,-41.18619l56.60926,41.18619l-21.62272,66.64094l-69.97288,0l-21.62278,-66.64094z"
+          fill-opacity="null"
+          stroke-width="1.5"
+          stroke="#7f0000"
+          fill="none"
+        />
+        <path
+          transform="rotate(35 614.4882202148436,-11.382926940918004) "
+          id="svg_46"
+          d="m557.87903,-24.1103l56.60912,-41.18619l56.60926,41.18619l-21.62272,66.64094l-69.97288,0l-21.62278,-66.64094z"
+          fill-opacity="null"
+          stroke-width="1.5"
+          stroke="#00007f"
+          fill="none"
+        />
+        <path
+          transform="rotate(35 444.6040344238281,118.34680938720705) "
+          id="svg_47"
+          d="m387.99486,105.61943l56.60912,-41.18619l56.60926,41.18619l-21.62272,66.64094l-69.97288,0l-21.62278,-66.64094z"
+          fill-opacity="null"
+          stroke-width="1.5"
+          stroke="#7f003f"
+          fill="none"
+        />
+        <path
+          transform="rotate(35 512.9437866210939,317.5745849609375) "
+          id="svg_48"
+          d="m456.33462,304.84723l56.60912,-41.18619l56.60926,41.18619l-21.62272,66.64094l-69.97288,0l-21.62278,-66.64094z"
+          fill-opacity="null"
+          stroke-width="1.5"
+          stroke="#007f7f"
+          fill="none"
+        />
+        <path
+          transform="rotate(35 724.8789672851561,313.32751464843756) "
+          id="svg_49"
+          d="m668.26975,300.60013l56.60912,-41.18619l56.60926,41.18619l-21.62272,66.64094l-69.97288,0l-21.62278,-66.64094z"
+          fill-opacity="null"
+          stroke-width="1.5"
+          stroke="#ff007f"
+          fill="none"
+        />
+        <path
+          id="svg_50"
+          d="m350.42013,275.64159l55.3418,-96.84819l55.3418,96.84819l-110.6836,0z"
+          fill-opacity="null"
+          stroke-width="1.5"
+          stroke="#7f007f"
+          fill="none"
+        />
+        <rect
+          id="svg_51"
+          height="86.32467"
+          width="86.32467"
+          y="-20.29911"
+          x="397.32906"
+          fill-opacity="null"
+          stroke-width="1.5"
+          stroke="#ffffff"
+          fill="none"
+        />
+        <ellipse
+          ry="52.56403"
+          rx="52.56403"
+          id="svg_52"
+          cy="395.93966"
+          cx="616.9869"
+          fill-opacity="null"
+          stroke-width="1.5"
+          stroke="#7f7f00"
+          fill="none"
+        />
+        <path
+          stroke="#ff6600"
+          id="svg_53"
+          d="m571.47766,160.11268l30.19835,0l9.33152,-28.68831l9.33153,28.68831l30.19834,0l-24.43093,17.73014l9.33201,28.68831l-24.43094,-17.73063l-24.43094,17.73063l9.33201,-28.68831l-24.43094,-17.73014z"
+          stroke-width="1.5"
+          fill="none"
+        />
+        <line
+          stroke="#ff6600"
+          stroke-linecap="null"
+          stroke-linejoin="null"
+          id="svg_55"
+          y2="140.52805"
+          x2="498.47494"
+          y1="160.04097"
+          x1="571.61885"
+          fill-opacity="null"
+          stroke-width="1.5"
+          fill="none"
+        />
+        <line
+          stroke="#ff6600"
+          stroke-linecap="null"
+          stroke-linejoin="null"
+          id="svg_57"
+          y2="136.48825"
+          x2="728.08785"
+          y1="160.2108"
+          x1="649.91122"
+          fill-opacity="null"
+          stroke-width="1.5"
+          fill="none"
+        />
+        <line
+          stroke="#ff6600"
+          stroke-linecap="null"
+          stroke-linejoin="null"
+          id="svg_58"
+          y2="52.98972"
+          x2="612.21145"
+          y1="131.33764"
+          x1="610.82683"
+          fill-opacity="null"
+          stroke-width="1.5"
+          fill="none"
+        />
+        <line
+          stroke-linecap="null"
+          stroke-linejoin="null"
+          id="svg_59"
+          y2="270.06963"
+          x2="685.47449"
+          y1="205.98531"
+          x1="635.47464"
+          fill-opacity="null"
+          stroke-width="1.5"
+          stroke="#ff6600"
+          fill="none"
+        />
+        <line
+          stroke="#ff6600"
+          stroke-linecap="null"
+          stroke-linejoin="null"
+          id="svg_60"
+          y2="206.68953"
+          x2="586.53112"
+          y1="273.36386"
+          x1="544.06847"
+          fill-opacity="null"
+          stroke-width="1.5"
+          fill="none"
+        />
+      </g>
+    </svg>
+  </section>
 </template>
 <script>
 //import anime from "animejs/lib/anime.es.js";
 
 export default {
-  mounted() {
-    
-  },
+  mounted() {},
 };
 </script>
 <style scoped>
+.full-page {
+  height: 100vh;
+  width: 100vw;
+}
 </style>
